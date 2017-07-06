@@ -1,0 +1,94 @@
+FORMAT: 1A
+ 
+# Chatbot Backend API
+ 
+Design for Chatbot back end for demo
+ 
+## Seats Collection [/seats]
+Game seats
+ 
+### List All Seats [GET]
+ 
+Lists all seats and availability and discount code
+ 
++ Response 200 (application/json; charset=utf-8)
+ 
+        [
+            {
+                "section": "Section 114",
+                "row": "3",
+                "available": true,
+                "price": 299,
+                "discount": "oracle",
+                "link": {
+                    "rel": "image",
+                    "href": "https://publicdocs-corp.documents.us2.oraclecloud.com/documents/link/LF7206C60A9212DA72124CA9F6C3FF17C1177E4725F3/file/D2BA28E8C506DC0CDA4F9C14F6C3FF17C1177E4725F3?allowInterrupt=1"
+                }
+            },
+            {
+                "section": "Section 216",
+                "row": "7",
+                "available": true,
+                "price": 219,
+                "discount": "oracle",
+                "link": {
+                    "rel": "image",
+                    "href": "https://publicdocs-corp.documents.us2.oraclecloud.com/documents/link/LF7206C60A9212DA72124CA9F6C3FF17C1177E4725F3/file/D5FE924F3D4B681BE0F70ED5F6C3FF17C1177E4725F3?allowInterrupt=1"
+                }
+            },
+            {
+                "section": "Section 229",
+                "row": "12",
+                "available": true,
+                "price": 146,
+                "discount": "oracle",
+                "link": {
+                    "rel": "image",
+                    "href": "https://publicdocs-corp.documents.us2.oraclecloud.com/documents/link/LF7206C60A9212DA72124CA9F6C3FF17C1177E4725F3/file/DF03AD812F69F02A82C04FC2F6C3FF17C1177E4725F3?allowInterrupt=1"
+                }
+            }
+        ]
+ 
+## Beers Collection [/beers]
+Available beers
+ 
+### List All Beers [GET]
+ 
+Lists all available beers on offer
+ 
++ Response 200 (application/json; charset=utf-8)
+ 
+        [
+            {
+                "name": "Guiness",
+                "description": "No preservatives or additives. 100% natural, ingredients create a unique flavour",
+                "link": {
+                    "rel": "image",
+                    "href": "https://publicdocs-corp.documents.us2.oraclecloud.com/documents/link/LF7206C60A9212DA72124CA9F6C3FF17C1177E4725F3/file/D2680B911AEB03B8C3B6EF22F6C3FF17C1177E4725F3?allowInterrupt=1"
+                }
+            },
+            {
+                "name": "Schlappe-Seppel",
+                "description": "Smooth bitter, tangy, fruity, full-bodied - more than a beer, it's an attitude",
+                "link": {
+                    "rel": "image",
+                    "href": "https://publicdocs-corp.documents.us2.oraclecloud.com/documents/link/LF7206C60A9212DA72124CA9F6C3FF17C1177E4725F3/file/DFE12285193404897A6331F4F6C3FF17C1177E4725F3?allowInterrupt=1"
+                }
+            },
+            {
+                "name": "Heineken",
+                "description": "Crisp, clean and refreshing, this popular beer is a classic European style Lager",
+                "link": {
+                    "rel": "image",
+                    "href": "https://publicdocs-corp.documents.us2.oraclecloud.com/documents/link/LF7206C60A9212DA72124CA9F6C3FF17C1177E4725F3/file/DE79A523EC91B0687D5AA852F6C3FF17C1177E4725F3?allowInterrupt=1"
+                }
+            },
+            {
+                "name": "Goldstar",
+                "description": "Drink with friends",
+                "link": {
+                    "rel": "image",
+                    "href": "https://publicdocs-corp.documents.us2.oraclecloud.com/documents/link/LF7206C60A9212DA72124CA9F6C3FF17C1177E4725F3/file/DA09DF49105AB60AFEBAC1E0F6C3FF17C1177E4725F3?allowInterrupt=1"
+                }
+            }
+        ]
